@@ -1,20 +1,34 @@
-<html>
-<head><title>Variabel Static</title></head>
-<body><h1>Variabel Static</h1>
-</php
-Funtion test()
-{
-    Static $A=0;
-    Echo "Nilai A";
-    Echo $A;
-    Echo"<br>";
-    $A++;
-}
-Test();
-Test();
-Test();
-Test();
-Test();
+<?php
+//Ini komentar dalam satu baris
+
+/* Kalau yang ini, komentar
+dalam banyak baris, yang baru
+akan selesai setelah diakhiri dengan*/
 ?>
-</body>
+
+<html>
+    <head>
+        <title>Test Penyisipan PHP Pada HTML</title>
+    </head>
+    <body>
+        Kapal Asing, Silahkan identifikasikan diri Anda!<br>
+        <?php
+        //Berikut ini adalah inisiasi beberapa variabel
+        $namad = "Jean";
+        $namat = "Luc";
+        $namab = "Piccard";
+        $nilai1 = 25;
+        $nilai2 = 50;
+        $hasil = $nilai1*$nilai2;
+        $a = 2;
+        $b = 3;
+        $hsl = pow($a,$b);
+        ?>
+    <b>Ini Adalah Kapal federasi Planet USS Enterprice.</b>
+    <?php
+    echo "Saya $namab, $namad, $namat, Kapten Kapal.";
+    echo "$nilai1 * $nilai2 = $hasil";
+    echo "$a^$b = $hsl";
+    ?>
+    </body>
 </html>
